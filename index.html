@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8">
-    <title>Mon CV</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil et Portfolio - Amadou Tidjani</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      <img src="photo_github.jpg" alt="Photo de profil">
-      <h1> Amadou Tidjani </h1>
-      <h2>Data scientist </h2>
-      <p>Ctr Antoine de St-Exupéry  | amadou.atsm@gmail.com </p>
+      <div class="profile-container">
+        <img src="photo_github.jpg" alt="Photo de profil" class="profile-img">
+        <div class="profile-info">
+          <h1>Amadou Tidjani</h1>
+          <h2>Data Scientist</h2>
+          <p>Ctr Antoine de St-Exupéry | <a href="mailto:amadou.atsm@gmail.com">amadou.atsm@gmail.com</a></p>
+        </div>
+      </div>
       <nav>
         <ul>
-            <li><a href="projects">CV </a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -23,32 +28,49 @@
         <h2>Statut</h2>
         <p>Page en construction</p>
       </section>
-      <section id="expérience">
+      <section id="experience">
         <h2>Expériences professionnelles</h2>
-        <h3> Projet de Fin d'Etudes  </h3>
-        <p>DeepAR pour la prévision des séries temporelles à l'aide de deep learning </p>
-        <p>ENSAI et Expleo Group</p>
-        <p>De Novembre 2022 au Mars 2023 </p>
-        <p> <li/> Montée en compétence en RNN, LSTM et Séries temporelles </p>
-        <h3> Projet Méthodologique  </h3>
-        <p>ENSAI et AirLiquide </p>
-        <p>De Septembre 2022 à Janvier 2023 </p>
-        <p> <li/> DeepCTRL: Incorporation des règles dans les réseaux de neuronnes </p>
-        <h3> Stage en Data  science </h3>
-        <p>Adway Conseil </p>
-        <p> De Juin à Septembre 2022</p>
-        <p> <li/> Cartographie des données climatiques </p>
-        <p> <li/> Modélisation des émissions de gaz à effet de serre des TPE/PME</p>
-        <p> <li/> Dédoublonnage des émissions du scope 3 </p>
+        <div class="experience-item">
+          <h3>Projet de Fin d'Études</h3>
+          <p><strong>Entreprise :</strong> ENSAI et Expleo Group</p>
+          <p><strong>Période :</strong> Novembre 2022 - Mars 2023</p>
+          <ul>
+            <li>Montée en compétence en RNN, LSTM et Séries temporelles</li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h3>Projet Méthodologique</h3>
+          <p><strong>Entreprise :</strong> ENSAI et AirLiquide</p>
+          <p><strong>Période :</strong> Septembre 2022 - Janvier 2023</p>
+          <ul>
+            <li>DeepCTRL: Incorporation des règles dans les réseaux de neurones</li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h3>Stage en Data Science</h3>
+          <p><strong>Entreprise :</strong> Adway Conseil</p>
+          <p><strong>Période :</strong> Juin - Septembre 2022</p>
+          <ul>
+            <li>Cartographie des données climatiques</li>
+            <li>Modélisation des émissions de gaz à effet de serre des TPE/PME</li>
+            <li>Dédoublonnage des émissions du scope 3</li>
+          </ul>
+        </div>
       </section>
-      <section id="formation">
+      <section id="education">
         <h2>Formation</h2>
-        <h3>Diplôme d'ingénieur en Data science, ENSAI</h3>
-        <p>Data science et génie statistique, 2021-2023 </p>
-        <h3>Diplôme d'ingénieur des travaux statistiques, ENSAE</h3>
-        <p>statistique et informatique décisionnelle, 2017-2021 </p>
+        <div class="education-item">
+          <h3>Diplôme d'ingénieur en Data Science</h3>
+          <p><strong>Établissement :</strong> ENSAI</p>
+          <p><strong>Années :</strong> 2021-2023</p>
+        </div>
+        <div class="education-item">
+          <h3>Diplôme d'ingénieur des travaux statistiques</h3>
+          <p><strong>Établissement :</strong> ENSAE</p>
+          <p><strong>Années :</strong> 2017-2021</p>
+        </div>
       </section>
-      <section id="compétences">
+      <section id="skills">
         <h2>Compétences</h2>
         <ul>
           <li>Python</li>
@@ -59,27 +81,25 @@
           <li>HTML/JS</li>
         </ul>
       </section>
-      <section id="langues">
+      <section id="languages">
         <h2>Langues</h2>
         <ul>
-          <li>Français: bilingue</li>
-          <li>Anglais: courant</li>
+          <li>Français : bilingue</li>
+          <li>Anglais : courant</li>
         </ul>
       </section>
     </main>
-
-
     <footer>
-        <section id="contact">
-          <h2>Contactez-moi</h2>
-          <form action="submit-form.php" method="post">
-            <label for="email">Adresse email:</label>
-            <input type="email" id="email" name="email">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-            <input type="submit" value="Envoyer">
-          </form>
-        </section>
-      </footer>
+      <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="submit-form.php" method="post">
+          <label for="email">Adresse email :</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" required></textarea>
+          <input type="submit" value="Envoyer">
+        </form>
+      </section>
+    </footer>
   </body>
 </html>
